@@ -6,6 +6,7 @@ coilVersion = "2.4.0"
 composeBom = "2024.04.00"
 constraintlayoutComposeVersion = "1.0.1"
 coreKtx = "1.12.0"
+coroutinesVersion = "1.7.1"
 espressoCore = "3.5.1"
 hilt = "1.2.0"
 hiltAndroid = "2.49"
@@ -15,9 +16,11 @@ kotlin = "1.9.23"
 ksp = "1.9.23-1.0.20"
 lifecycleRuntimeCompose = "2.7.0"
 lifecycleRuntimeKtx = "2.7.0"
+mockkVersion = "1.13.10"
 moshiVersion = "1.15.0"
 okHttpVersion = "4.11.0"
 retrofitVersion = "2.9.0"
+turbineVersion = "1.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -51,6 +54,8 @@ coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coi
 coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coilVersion" }
 coil-landscapist = { group = "com.github.skydoves", name = "landscapist-coil", version.ref = "coilLandscapistVersion" }
 
+coroutines-test = { group="org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesVersion" }
+
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
@@ -59,12 +64,17 @@ hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", ve
 
 logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpVersion" }
 
+mockk-agent = { group = "io.mockk", name = "mockk-agent", version.ref = "mockkVersion" }
+mockk-android = { group = "io.mockk", name = "mockk-android", version.ref = "mockkVersion" }
+
 moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshiVersion" }
 moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshiVersion" }
 moshi-kotlin-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshiVersion" }
 
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
 retrofit-converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofitVersion" }
+
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbineVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -96,6 +106,11 @@ compose-debug = [
 hilt = [
     "hilt-android",
     "hilt-navigation-compose"
+]
+
+mockk = [
+    "mockk-agent",
+    "mockk-android"
 ]
 
 moshi = [

@@ -65,6 +65,9 @@ dependencies {
     implementation(libs.bundles.retrofit)
 
     testImplementation(libs.junit)
+    testImplementation(libs.bundles.mockk)
+    testImplementation(libs.coroutines.test)
+    testImplementation(libs.turbine)
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
