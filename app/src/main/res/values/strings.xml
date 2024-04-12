@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CatsAPP</string>
+
+    <string name="error_service_unavailable">Oops, an error happened. Please try again later.</string>
+    <string name="client_error">Oops, an error happened. Please contact the support.</string>
+    <string name="server_error">Oops, an error happened. Please try again later.</string>
+    <string name="unknown_error">Oops, an unknown error happened.</string>
+
+    <string name="navigate_back">Navigate back</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="copy_url">Copy url</string>
+    <string name="open_url">Open url</string>
+    <string name="retry">Retry</string>
+    <string name="gallery">Gallery</string>
+    <string name="aka">"a.k.a %1$s"</string>
+    <string name="from">"From: %1$s"</string>
+    <string name="characteristics">"Characteristics:"</string>
+    <string name="temperament">"Temperament: %1$s"</string>
+    <string name="description">"Description: %1$s"</string>
+    <string name="lifespan">"Life Span: %1$s years"</string>
+    <string name="weight">"Weight: %1$s (lb) / %2$s (kg)"</string>
+    <string name="adaptability">"Adaptability %1$d"</string>
+    <string name="affectionLevel">"Affection Level %1$d"</string>
+    <string name="childFriendly">"Child Friendly %1$d"</string>
+    <string name="dogFriendly">"Dog Friendly %1$d"</string>
+    <string name="energyLevel">"Energy Level %1$d"</string>
+    <string name="grooming">"Grooming %1$d"</string>
+    <string name="healthIssues">"Health Issues %1$d"</string>
+    <string name="intelligence">"Intelligence %1$d"</string>
+    <string name="sheddingLevel">"Shedding Level %1$d"</string>
+    <string name="socialNeeds">"Social Needs %1$d"</string>
+    <string name="strangerFriendly">"Stranger Friendly %1$d"</string>
+    <string name="vocalisation">"Vocalisation %1$d"</string>
+</resources>

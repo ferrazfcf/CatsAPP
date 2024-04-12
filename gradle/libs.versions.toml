@@ -1,0 +1,109 @@
+[versions]
+activityCompose = "1.8.2"
+agp = "8.3.2"
+coilLandscapistVersion = "2.2.9"
+coilVersion = "2.4.0"
+composeBom = "2024.04.00"
+constraintlayoutComposeVersion = "1.0.1"
+coreKtx = "1.12.0"
+espressoCore = "3.5.1"
+hilt = "1.2.0"
+hiltAndroid = "2.49"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+kotlin = "1.9.23"
+ksp = "1.9.23-1.0.20"
+lifecycleRuntimeCompose = "2.7.0"
+lifecycleRuntimeKtx = "2.7.0"
+moshiVersion = "1.15.0"
+okHttpVersion = "4.11.0"
+retrofitVersion = "2.9.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
+
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+
+compose-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayoutComposeVersion" }
+
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coilVersion" }
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilVersion" }
+coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coilVersion" }
+coil-landscapist = { group = "com.github.skydoves", name = "landscapist-coil", version.ref = "coilLandscapistVersion" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt" }
+
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpVersion" }
+
+moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshiVersion" }
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshiVersion" }
+moshi-kotlin-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshiVersion" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofit-converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofitVersion" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
+kotlinKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+[bundles]
+compose = [
+    "androidx-ui",
+    "androidx-ui-graphics",
+    "androidx-ui-tooling-preview",
+    "androidx-material3",
+    "androidx-lifecycle-runtime-compose",
+    "androidx-activity-compose",
+    "compose-material-icons-extended",
+    "compose-constraintlayout",
+    "coil",
+    "coil-compose",
+    "coil-gif",
+    "coil-landscapist"
+]
+
+compose-debug = [
+    "androidx-ui-tooling",
+    "androidx-ui-test-manifest"
+]
+
+hilt = [
+    "hilt-android",
+    "hilt-navigation-compose"
+]
+
+moshi = [
+    "moshi",
+    "moshi-kotlin"
+]
+
+retrofit = [
+    "retrofit",
+    "retrofit-converter-moshi"
+]
